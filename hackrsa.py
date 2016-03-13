@@ -46,9 +46,12 @@ m3=(input ("ingrese el tercer digito a desencriptar: "))
 m4=(input ("ingrese el cuarto digito a desencriptar: "))
 
 
-#Una vez obtenemos la llave publica (e,N), y los cuatros digitos (m1,m2,m3,m4), buscamos los numeros primos entres 2 y N para hallar los #valores de p y q con los que anteriormente se genero la llave publica.
-#Este proceso se realiza mediante dos ciclos en los cuales se evalua que numeros son primos y su multiplicacion da como resultado el valor de #N
-#	Esto, recordando que para generar la llave publica se requieren dos numeros primos, en este caso p y q, y N era igual a la 	#	multiplicacion de estos dos. N= p*q
+#Una vez obtenemos la llave publica (e,N), y los cuatros digitos (m1,m2,m3,m4), buscamos los numeros primos entres 2 y N para
+#hallar los valores de p y q con los que anteriormente se genero la llave publica.
+#Este proceso se realiza mediante dos ciclos en los cuales se evalua que numeros son primos y su multiplicacion da como 
+#resultado el valor de N
+#	Esto, recordando que para generar la llave publica se requieren dos numeros primos, en este caso p y q, y N era igual 
+#	a la multiplicacion de estos dos. N= p*q
 
 #Una vez hecho esto, encontramos el valor de phi con la funcion de euler(p,q)
 
@@ -60,17 +63,21 @@ m4=(input ("ingrese el cuarto digito a desencriptar: "))
 #Luego hallamos 'd'.
 #	Recordando que:
 	# 'd' se encuentra multiplicando una lista de numeros * e, y si al dividir el producto entre phi, el residuo
-#  	es 1, encotraremos una lista de posibles 'd'. Por tal razon se crea un ciclo en el que 'd' es una lista que va desde 0 hasta
-#  	el doble de phi, para encontrar el segundo numero 'd' de la lista que cumpla la condicion.	
+#  	es 1, encotraremos una lista de posibles 'd'. Por tal razon se crea un ciclo en el que 'd' es una lista que va desde 
+# 	0 hasta el doble de phi, para encontrar el segundo numero 'd' de la lista que cumpla la condicion.	
 
 
 
 #Hemos obtenido ya la clave publica (e,N) y la llave privada (d,N)
 #desencriptamos el mensaje de la siguiente manera:
-#	A la primera variable "n1" le llevamos el primer digito ingresado "m1",este se eleva al numero "d" y le sacamos modulo del numero N.
-#	A la segunda variable "n2" le llevamos el segundo digito ingresado "m2",este se eleva al numero "d" y le sacamos modulo del numero N.
-#	A la tercera variable "n3" le llevamos el tercer digito ingresado "m3",este se eleva al numero "d" y le sacamos modulo del numero N.
-#	A la cuarta variable "n4" le llevamos el cuarto digito ingresado "m4",este se eleva al numero "d" y le sacamos modulo del numero N.
+#	A la primera variable "n1" le llevamos el primer digito ingresado "m1",
+	#este se eleva al numero "d" y le sacamos modulo del numero N.
+#	A la segunda variable "n2" le llevamos el segundo digito ingresado "m2",
+	#este se eleva al numero "d" y le sacamos modulo del numero N.
+#	A la tercera variable "n3" le llevamos el tercer digito ingresado "m3",
+	#este se eleva al numero "d" y le sacamos modulo del numero N.
+#	A la cuarta variable "n4" le llevamos el cuarto digito ingresado "m4",
+	#este se eleva al numero "d" y le sacamos modulo del numero N.
 #	luego de esto se retornan los cuatros numero desencriptados n1,n2,n3 y n4.
 
 
