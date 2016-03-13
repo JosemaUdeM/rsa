@@ -67,7 +67,8 @@ def euler(p,q):
 # el numero e debe cumplir las siguientes condiciones: [1 < e < phi)] y coprimo con phi.
 #Para que se cumpla esto, se crea una lista que va desde 2 hasta el numero anterior a phi:
 #Range (2,phi) ya que este va desde 2 hasta phi-1
-#A continuacion se utiliza la funcion arecoprime para buscar en la lista 'e' el ultimo numero que sea coprimo con phi y se escoge este.
+#A continuacion se utiliza la funcion arecoprime para buscar en la lista 'e' el ultimo numero que sea coprimo con phi y
+#se escoge este.
 
 # 'd' se encuentra multiplicando una lista de numeros * e, y si al dividir el producto entre phi, el residuo
 #  es 1, encotraremos una lista de posibles 'd'. Por tal razon se crea un ciclo en el que 'd' es una lista que va desde 0 hasta
