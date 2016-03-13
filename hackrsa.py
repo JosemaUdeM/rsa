@@ -7,7 +7,8 @@
 
 #PROBLEMA NUMERO DOS
 
-#Escriba una funcion que dada la clave publica y un mensaje compuesto de cuatro digitos desencripte el mensaje formado por estos cuatro #numeros
+#Escriba una funcion que dada la clave publica y un mensaje compuesto de cuatro digitos desencripte el mensaje formado 
+#por estos cuatro numeros
 
 #SOLUCION
 
