@@ -103,6 +103,6 @@ def hackrsa(e,N,m1,m2,m3,m4):
 print "Mensaje desencriptado"
 
 #A las variables n1,n2,n3,n4 se le asigna los valores que retorna la funcion hackrsa(e,N,m1,m2,m3,m4)
-#se imprimen las variables n1,n2.n3 y n4 que es el mensaje decodificado o desencriptado.
+#se imprimen las variables n1,n2.n3 y n4 que es el mensaje decodificado o desencriptado. 
 n1,n2,n3,n4 = hackrsa(e,N,m1,m2,m3,m4) 
 print n1,n2,n3,n4
